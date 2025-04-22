@@ -11,7 +11,6 @@ A lightweight, laptop‑scale finetuning of TinyLlama (1.1 B) in “Socratic tut
 
 ## 📁 Repo Structure
 
-```text
 /
 ├─ data/  
 │  └─ tutor_v1_sft.jsonl        # GPT‑4o generated dataset (~1500 examples)
