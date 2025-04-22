@@ -1,0 +1,41 @@
+model,topic,socratic,helpful
+base,Faraday's law,0.0,0.5
+tuned,Faraday's law,1.0,0.5
+base,gene expression,0.0,1.0
+tuned,gene expression,1.0,0.5
+base,principle of least action,0.0,0.5
+tuned,principle of least action,1.0,0.5
+base,hash collisions,0.0,0.5
+tuned,hash collisions,1.0,0.5
+base,inflationary cosmology,0.0,0.7
+tuned,inflationary cosmology,1.0,0.3
+base,Hamming distance,0.0,0.5
+tuned,Hamming distance,1.0,0.5
+base,latent heat of fusion,0.0,0.7
+tuned,latent heat of fusion,1.0,0.5
+base,Newton's cradle,0.0,0.5
+tuned,Newton's cradle,1.0,0.5
+base,Garbage Collection in Java,0.0,0.8
+tuned,Garbage Collection in Java,1.0,0.5
+base,K‑means clustering,0.0,0.5
+tuned,K‑means clustering,1.0,0.5
+base,photosynthetic Calvin cycle,0.0,0.7
+tuned,photosynthetic Calvin cycle,1.0,0.0
+base,Shor's algorithm,0.0,0.5
+tuned,Shor's algorithm,1.0,0.5
+base,Lyapunov stability,0.0,0.8
+tuned,Lyapunov stability,1.0,0.5
+base,net present value,0.0,0.2
+tuned,net present value,1.0,0.5
+base,Kaplan‑Meier curves,0.0,1.0
+tuned,Kaplan‑Meier curves,1.0,0.5
+base,HTTP 3‑way handshake,0.0,0.5
+tuned,HTTP 3‑way handshake,1.0,0.3
+base,Lorenz attractor,0.0,0.5
+tuned,Lorenz attractor,1.0,0.0
+base,PID control,0.0,0.8
+tuned,PID control,1.0,0.2
+base,Poisson distribution,0.0,1.0
+tuned,Poisson distribution,1.0,0.5
+base,CRISPR‑Cas immunity,0.0,0.8
+tuned,CRISPR‑Cas immunity,1.0,0.5

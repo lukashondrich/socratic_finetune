@@ -1,0 +1,23 @@
+,helpful,helpful,socratic,socratic
+model,base,tuned,base,tuned
+topic,,,,
+CRISPR‑Cas immunity,0.8,0.5,0.0,1.0
+Faraday's law,0.5,0.5,0.0,1.0
+Garbage Collection in Java,0.8,0.5,0.0,1.0
+HTTP 3‑way handshake,0.5,0.3,0.0,1.0
+Hamming distance,0.5,0.5,0.0,1.0
+Kaplan‑Meier curves,1.0,0.5,0.0,1.0
+K‑means clustering,0.5,0.5,0.0,1.0
+Lorenz attractor,0.5,0.0,0.0,1.0
+Lyapunov stability,0.8,0.5,0.0,1.0
+Newton's cradle,0.5,0.5,0.0,1.0
+PID control,0.8,0.2,0.0,1.0
+Poisson distribution,1.0,0.5,0.0,1.0
+Shor's algorithm,0.5,0.5,0.0,1.0
+gene expression,1.0,0.5,0.0,1.0
+hash collisions,0.5,0.5,0.0,1.0
+inflationary cosmology,0.7,0.3,0.0,1.0
+latent heat of fusion,0.7,0.5,0.0,1.0
+net present value,0.2,0.5,0.0,1.0
+photosynthetic Calvin cycle,0.7,0.0,0.0,1.0
+principle of least action,0.5,0.5,0.0,1.0
