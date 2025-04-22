@@ -11,6 +11,7 @@ A lightweight, laptop‑scale finetuning of TinyLlama (1.1 B) in “Socratic tut
 
 ## 📁 Repo Structure
 
+
 /
 ├─ data/  
 │  └─ tutor_v1_sft.jsonl        # GPT‑4o generated dataset (~1500 examples)
@@ -23,24 +24,24 @@ A lightweight, laptop‑scale finetuning of TinyLlama (1.1 B) in “Socratic tut
 ├─ requirements.txt             # pinned dependencies
 └─ README.md
 
-🚀 Quickstart
-1. Clone & install
+## 🚀 Quickstart
+  ### 1. Clone & install
 
-git clone https://github.com/lukashondrich/socratic_finetune.git
-cd socratic_finetune
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
+  git clone https://github.com/lukashondrich/socratic_finetune.git
+  cd socratic_finetune
+  python3 -m venv .venv
+  source .venv/bin/activate
+  pip install --upgrade pip
+  pip install -r requirements.txt
 
-2. Generate the dataset
+  ### 2. Generate the dataset
 
-Create a local .env from the template and set your OpenAI key:
+  Create a local .env from the template and set your OpenAI key:
 
-cp example_env .env
-# Edit .env → set OPENAI_API_KEY=sk-...
-python src/00_gen_data_openai.py
-# produces data/tutor_v1_sft.jsonl (~1500 rows)
+  cp example_env .env
+   Edit .env → set OPENAI_API_KEY=sk-...
+  python src/00_gen_data_openai.py
+   produces data/tutor_v1_sft.jsonl (~1500 rows)
 
 3. Finetune with LoRA
 
