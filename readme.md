@@ -2,8 +2,37 @@
 
 A lightweight, laptop-scale finetuning of TinyLlama (1.1B) in "Socratic tutor" style, with a taste of Anthropic's constitutional self-critique via GPT-4o.
 
+Motivation: Traditional "helpfulness" means answering questions directly, but in a tutoring context its often better to be less "helpful" and more "socratic", i.e. encouraging the student to think for themselves first. Models struggle to follow this instructions sometimes through simple prompting, warranting a deeper intervention. 
+
+
 ![Evaluation Results](eval_plot.png)
 *Figure: GPT-4o-scored "Socratic-ness" & "Helpfulness" (base vs. tuned)*
+
+## 📈 Results
+
+After running `03_eval_gpt4.py`, expected outcomes:
+
+| Model | Socraticness (mean) | Helpfulness (mean) |
+|-------|---------------------|-------------------|
+| Base  | ~0.00               | ~0.66             |
+| Tuned | ~1.00               | ~0.42             |
+
+Paired t-test: p < 0.01 on both metrics.
+
+## 🔍 Key Insights
+
+- The fine-tuned model achieved perfect Socratic-ness scores (1.0 vs 0.0 for base model)
+- There is a trade-off with perceived helpfulness (0.42 vs 0.66 for base model)
+- This demonstrates successful behavioral alignment through fine-tuning
+- The model now guides through questions rather than providing direct answers
+
+## 🧠 Technical Notes
+
+- Used Guanaco/Llama-2 style instruction format for compatibility with TinyLlama-Chat
+- LoRA configuration targets all attention projection layers (q_proj, k_proj, v_proj, o_proj)
+- Gradient clipping (max_grad_norm=0.3) was essential for stable training
+- Training on ~1500 examples is sufficient to dramatically alter response style
+
 
 ## 📁 Repo Structure
 
@@ -78,27 +107,3 @@ This will create:
 - `max_length` in `01_finetune_and_infer.py`: token-length cap (default 512).
 - LoRA rank & LR: see comments in `01_finetune_and_infer.py`.
 
-## 📈 Results
-
-After running `03_eval_gpt4.py`, expected outcomes:
-
-| Model | Socraticness (mean) | Helpfulness (mean) |
-|-------|---------------------|-------------------|
-| Base  | ~0.00               | ~0.66             |
-| Tuned | ~1.00               | ~0.42             |
-
-Paired t-test: p < 0.01 on both metrics.
-
-## 🔍 Key Insights
-
-- The fine-tuned model achieved perfect Socratic-ness scores (1.0 vs 0.0 for base model)
-- There is a trade-off with perceived helpfulness (0.42 vs 0.66 for base model)
-- This demonstrates successful behavioral alignment through fine-tuning
-- The model now guides through questions rather than providing direct answers
-
-## 🧠 Technical Notes
-
-- Used Guanaco/Llama-2 style instruction format for compatibility with TinyLlama-Chat
-- LoRA configuration targets all attention projection layers (q_proj, k_proj, v_proj, o_proj)
-- Gradient clipping (max_grad_norm=0.3) was essential for stable training
-- Training on ~1500 examples is sufficient to dramatically alter response style
