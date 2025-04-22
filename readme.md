@@ -19,6 +19,11 @@ After running `03_eval_gpt4.py`, expected outcomes:
 
 Paired t-test: p < 0.01 on both metrics.
 
+**Example Q**: *"What is the capital of Japan?"*
+- Base-model: *"The capital of Japan is Tokyo"*
+- tuned-model: *"What do you know about Japan?..*
+
+
 ## 🔍 Key Insights
 
 - The fine-tuned model achieved perfect Socratic-ness scores (1.0 vs 0.0 for base model)
