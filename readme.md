@@ -1,6 +1,6 @@
 # Socratic Finetune Demo
 
-A lightweight, laptop-scale finetuning of TinyLlama (1.1B) in "Socratic tutor" style, with a taste of Anthropic's constitutional self-critique via GPT-4o.
+A lightweight, laptop-scale finetuning of TinyLlama (1.1B) in 'Socratic tutor' style, with evaluation powered by GPT-4o.
 
 Motivation: Traditional "helpfulness" means answering questions directly, but in a tutoring context its often better to be less "helpful" and more "socratic", i.e. encouraging the student to think for themselves first. Models struggle to follow this instructions sometimes through simple prompting, warranting a deeper intervention. 
 
